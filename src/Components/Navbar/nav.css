@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202533;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 25px 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    font-size: 26px;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a,
+.login {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.member {
+    background: #23a6f0;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 5px;
+}
+
+.mobileIcons {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.left p {
+    color: #cbd5e1;
+    max-width: 400px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 16px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quote {
+    background: #23a6f0;
+    color: white;
+    border: none;
+}
+
+.learn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.right {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: #176da0;
+    position: absolute;
+}
+
+.smallCircle {
+    display: none;
+}
+
+.phone {
+    width: 420px;
+    height: 610px;
+    object-fit: contain;
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 20px 15px;
+        overflow: hidden;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 45px;
+        order: 2;
+    }
+
+    .links a {
+        font-size: 20px;
+    }
+
+    .navButtons {
+        order: 1;
+        gap: 10px;
+    }
+
+    .login,
+    .member {
+        display: none;
+    }
+
+    .mobileIcons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 22px;
+        color: white;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 105px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .left p {
+        max-width: 260px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px auto;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .buttons button {
+        width: 140px;
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .right {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .smallCircle {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 130px;
+        border-radius: 50%;
+        background: #405675;
+        left: -90px;
+        top: -250px;
+    }
+
+    .phone {
+        width: 220px;
+        height: 270px;
+    }
+}
