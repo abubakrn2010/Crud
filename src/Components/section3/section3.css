@@ -1,0 +1,60 @@
+
+.title {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9699a6;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  width: 210px;
+  padding: 15px;
+  border: 1px solid #40465a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn p {
+  font-size: 12px;
+}
+
+.btn h3 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 610px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
