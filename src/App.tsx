@@ -85,7 +85,7 @@ function App() {
             <input placeholder="Name" value={name}
               onChange={(e) => setName(e.target.value)} />
 
-            <input type="text" placeholder="Age" value={age}
+            <input type="text " placeholder="Age" value={age}
               onChange={(e) => setAge(e.target.value)} />
 
             <select value={status}
